@@ -17,7 +17,7 @@ const Projects = () => {
             <main className="project-wrapper" id="projects">
                 <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>Recent <span className="heading-highlight">projects</span>.</h2>
                 <div className="underline"></div>
-                <p style={{margin:'1rem 0',color:'var(--asparagus)'}}>Live links are currently unavailable as they are under maintenance.</p>
+                <p className="project-subtitle" style={{margin:'1rem 0'}}>Live links are currently unavailable as they are under maintenance.</p>
                 <div className="project-container" ref={containerXRef}>
                     {
                         projects.length > 0 ?

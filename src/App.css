@@ -21,7 +21,8 @@
     --app-bg: #111010;
     --violet: #6019b1;
     --light-violet:#9845cf;
-    --light-green: #9CE37D;
+    --light-green: #00ba41;
+    --gradient-subtitle: linear-gradient(90deg, rgba(87,208,56,1) 10%, rgba(0,212,255,1) 100%);
     --green:#1ec51e;
     --asparagus: #87B37A;
     --xanadu: #77867F;

@@ -33,12 +33,16 @@
     margin: 0.5rem 0;
 }
 #dark .banner-slogan-container p{
-    color:var(--asparagus);
+    background-image: var(--gradient-subtitle);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .banner-slogan-container h1 {
     font-size: 3rem;
     color: var(--bigtitles);
+    
 }
 
 #dark .banner-slogan-container h1 {

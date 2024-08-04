@@ -16,3 +16,10 @@
     overflow: hidden;
     padding: 1rem;
 }
+.project-subtitle{
+    font-size: 1.3rem;
+    background-image: var(--gradient-subtitle);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

@@ -10,7 +10,10 @@
     color:var(--bigtitles);
 }
 #dark .stack-container h3{
-    color:var(--helio-gray);
+    background-image: var(--gradient-subtitle);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 .big-flex-box{
     min-height:100vh;

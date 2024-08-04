@@ -25,9 +25,12 @@
 }
 /* logo */
 .left .logo-container h1 a{   
-    font-size: 2.2rem;
-    color:var(--asparagus);
+    font-size: 2.5rem;
     font-family: "Space Grotesk",sans-serif;
+    background-image: var(--gradient-subtitle);
+    -webkit-background-clip: text;
+    background-clip:text;
+    color: transparent;
 }
 
 /* toggle bg */

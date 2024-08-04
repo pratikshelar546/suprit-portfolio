@@ -14,7 +14,10 @@
     padding:0.5rem;
 }
 .form-container p{
-    color:var(--helio-gray);
+    background-image: var(--gradient-subtitle);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
 }
 form{
     height:fit-content;
