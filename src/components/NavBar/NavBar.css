@@ -23,9 +23,13 @@
     justify-content: space-evenly;
     width:20%;
 }
+
+
+
 /* logo */
-.left .logo-container h1 a{   
-    font-size: 2.5rem;
+.left .logo-container .tital{   
+    font-size: 2rem;
+    font-weight: 600;
     font-family: "Space Grotesk",sans-serif;
     background-image: var(--gradient-subtitle);
     -webkit-background-clip: text;
@@ -46,11 +50,11 @@
 }
 .right{
     display: flex;
-    position:relative;
-    align-items:center;
+    position: relative;
+    align-items: center;
     justify-content: flex-end;
-    gap:0.6rem;
-    width:80%;
+    gap: 0.6rem;
+    width: 80%;
 }
 
 /* menu items */
@@ -86,7 +90,7 @@
 /* active link */
 .right .active{
     color:white;
-    padding:0.4rem;
+    padding:0.4rem 1rem;
     width: fit-content;
     border-radius: 0.5rem;
     background:var(--violet);
@@ -168,9 +172,12 @@
 
 /* large medium */
 @media screen and (max-width:930px){
-
+    .navbar-wrapper .left{
+        width: 100% !important;
+        justify-content:start
+    }
     .left .logo-container h1 a{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     .left .fa-solid{
         font-size: 2.4rem;
@@ -181,16 +188,19 @@
         font-size: 1.1rem;
         margin: 0.5rem;
     }
-    .right .social-icon{
-        position: absolute;
+    /* .right .social-icon{
+        position: fixed;
         display: flex;
         flex-direction: column;
-        top:20rem;
-        left:-25%;
+        top: 50%; 
+        left: 0; 
+        transform: translateY(-50%); 
         z-index: 30;
         transform: scale(1.1);
         background: var(--dark-theme);
-    }
+        padding: 0.5rem; 
+        border-radius: 0 5px 5px 0;
+    } */
     .right .fa-brands{
         font-size: 1.5rem;
         padding:4px;
@@ -204,9 +214,9 @@
         font-size: 1.1rem;
         padding: 5px;
     }
-    .left .logo-container h1 a{
-        /* font-size: 1.4rem; */
-        margin-left: 2rem;
+    .left .logo-container .tital{
+        font-size: 1.4rem;
+        margin-left: 1rem;
     }
     .left .fa-solid{
         font-size:2rem;

@@ -3,7 +3,7 @@
 }
 
 .banner-wrapper {
-    min-height: 100vh;
+    min-height: 88vh;
     width: 100vw;
     position: relative;
     margin-top: 4rem;
@@ -22,10 +22,11 @@
 .banner-slogan-container {
     display: grid;
     place-content: center;
-    height: 100vh;
-    width: 40rem;
-    padding: 6rem;
+    height: auto;
+    width: 100%;
+    max-width: 40rem;
     text-align: left;
+    padding: 0 1rem;
 }
 .banner-slogan-container p {
     font-size: 1.4rem;
@@ -59,13 +60,14 @@
 
 .banner-buttons-container button {
     font-size: 1.2rem;
-    padding: 0.7rem 2rem;
+    padding: var(--banner-button-padding);
     width: max-content;
     margin: 1rem;
     border: none;
     cursor: pointer;
     color: #ffffff;
     border-radius: 0.6rem;
+    padding: 0.5rem 1.2rem;
     background: var(--dark-theme-vio);
 }
 
@@ -73,6 +75,7 @@
     opacity: 0.9;
     transform: scale(1.06);
 }
+
 
 #resume-btn {
     background: transparent;
@@ -163,7 +166,8 @@
 }
 
 #dark .banner-image-container::before {
-    background: var(--dark-theme-vio);
+    /* background: var(--dark-theme-vio); */
+    background-color: #3f6034;
 }
 
 .banner-image-container:hover .banner-sticker p,
@@ -179,17 +183,18 @@
 
     .banner-slogan-container {
         height: fit-content;
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
     }
 
     .banner-slogan-container h1 {
-        font-size: 2.45rem;
+        font-size: 2.2rem;
     }
     .banner-slogan-container p {
         font-size: 1.4rem;
     }
     .banner-buttons-container {
         margin: 0 auto;
+        display: flex;
     }
     .banner-buttons-container button {
         font-size: 1.1rem;
@@ -207,7 +212,7 @@
    
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:480px) {
     .banner-wrapper {
         margin-top: 1rem;
         overflow: hidden;
@@ -217,7 +222,7 @@
         margin: 0.5rem 0;
     }
     .banner-slogan-container h1 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
     .banner-slogan-container p {
         font-size: 1.2rem;
@@ -239,19 +244,31 @@
     }
     .cover p {
         font-size: 1rem;
-        padding: 1rem;
-        width: 15rem;
+        padding: 0.7rem;
+        width: 12rem;
         margin-top: -7rem;
+        animation:zoomanimation 2s ease-in ;
     }
+
+    @keyframes zoomanimation{
+        from{
+          transform: scale3d(0);
+          opacity: 0;
+      }to{
+          transform: scale3d(2);
+          opacity: 1;
+      }
+      }
+
     .banner-sticker p{
-        padding:1rem;
-        font-size: 1rem;
+        padding:0.7rem;
+        font-size: 0.8rem;
     }
     .banner-sticker p:nth-child(1) {
-        top:12%;
-        left:5%;
+        top:16%;
+        left:17%;
         opacity: 1;
-        transition:animation 1000ms;
+        transition:animation 5000ms;
         animation:moveright 2000ms ease ; 
     }
     @keyframes moveright{
@@ -264,8 +281,8 @@
     }
     }
     .banner-sticker p:nth-child(2) {
-        top:62%;
-        right: 5%;
+        top:55%;
+        right: 17%;
         opacity: 1;
         transition:animation 1000ms;
         animation:moveleft 2000ms ease ; 

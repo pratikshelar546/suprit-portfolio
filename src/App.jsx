@@ -33,11 +33,11 @@ function App() {
         <Banner />
         <About />
         <Services/>
-        <Projects />
+        {/* <Projects /> */}
         <Tech />
         <Experience />
-        <Achievements />
-        <Testimonials />
+        {/* <Achievements /> */}
+        {/* <Testimonials /> */}
         <Contact />
         <Footer />
         <Scroller />

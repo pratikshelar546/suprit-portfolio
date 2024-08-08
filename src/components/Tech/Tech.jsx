@@ -1,40 +1,72 @@
-import { html, css, js, react, sass, nodejs, express, mongodb, git, github } from '../../assets';
-import './Tech.css';
-import { useInView } from 'react-intersection-observer';
+import {
+  html,
+  css,
+  js,
+  react,
+  sass,
+  nodejs,
+  express,
+  mongodb,
+  git,
+  github,
+  sheet,
+  jira,
+  trello,
+  slack,
+  python,
+  powerbi,
+  canva,
+  goggleAnalytics,
+  sql,
+} from "../../assets";
+import "./Tech.css";
+import { useInView } from "react-intersection-observer";
 
 const Tech = () => {
-
-    const { ref: myTitleRef, inView: titleVisible } = useInView();
-    const { ref: myDesRef, inView: despVisible } = useInView();
-
-    return (
-        <div className="stack-container" id="tech">
-            <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>
-                <span className="heading-highlight">Technologies</span> I use.
-            </h2>
-            <div className="underline"></div>
-            <h3>Languages | Libraries | Framework | Hosting</h3>
-            <div className="big-flex-box">
-                <div className="left-side">
-                    {/* contains the techs */}
-                    <img src={html} alt="html" />
-                    <img src={css} alt="css" />
-                    <img src={js} alt="js" />
-                    <img src={react} alt="react" />
-                    <img src={nodejs} alt="node" />
-                    <img src={express} alt="express" />
-                    <img src={mongodb} alt="mongo" />
-                    <img src={sass} alt="sass" />
-                    <img src={git} alt="git" />
-                    <img src={github} alt="github" />
-                </div>
-                <div
-                    ref={myDesRef}
-                    className={despVisible ? "right-side show" : "right-side"}>
-                    <p>I utilize a variety of programming languages, scripting languages, tools, and technologies in my projects. With a strong background in the MERN stack, I am currently dedicated to honing my skills through real-world projects that address and solve practical problems.</p>
-                </div>
-            </div>
+  const { ref: myTitleRef, inView: titleVisible } = useInView();
+  const { ref: myDesRef, inView: despVisible } = useInView();
+  const { ref: skillsRef, inView: skillsVisisble } = useInView();
+  return (
+    <div className="stack-container" id="tech">
+      <h2
+        ref={myTitleRef}
+        className={
+          titleVisible ? "component-headings show" : "component-headings"
+        }
+      >
+        <span className="heading-highlight">Professional </span> Expertise.
+      </h2>
+      <div className="underline"></div>
+      <h3>Analysis | Management | Visualization | Communication</h3>
+      <div className="big-flex-box">
+        <div
+          ref={skillsRef}
+          className={`left-side ${skillsVisisble ? "show" : ""}`}
+        >
+          {/* contains the techs */}
+          <img src={sheet} alt="sheet" />
+          <img src={jira} alt="jira" />
+          <img src={trello} alt="trello" />
+          <img src={slack} alt="slack" />
+          <img src={python} alt="python" />
+          <img src={powerbi} alt="powerBI" />
+          <img src={canva} alt="canva" />
+          <img src={goggleAnalytics} alt="anaytics" />
+          <img src={sql} alt="sql" />
         </div>
-    );
-}
+        <div
+          ref={myDesRef}
+          className={despVisible ? "right-side show" : "right-side"}
+        >
+          <p>
+            I leverage various tools like Excel & Google Sheets, Jira & Trello,
+            Slack & Basecamp, Python, Power BI, Canva, and Google Analytics.
+            With expertise in these platforms, I'm focused on applying my skills
+            to real-world projects that solve practical problems.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Tech;

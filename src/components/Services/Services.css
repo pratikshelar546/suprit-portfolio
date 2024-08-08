@@ -37,10 +37,10 @@
     color: var(--helio-gray);
 }
 .Card:hover{
-    box-shadow: 0 0 0 10px var(--helio-gray);
+    box-shadow: 0 0 0 7px var(--xanadu);
 }
 .Card.show{
-    transition:all 800ms ;
+    transition:all 500ms ;
     opacity: 1;
     transform:scale(1);
 }
@@ -62,7 +62,7 @@
 
 .skills-images img{
     height:11rem;
-    width:11rem;
+    width:13rem;
 }
 
 /* --- medium screens----- */
